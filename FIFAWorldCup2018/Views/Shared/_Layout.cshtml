@@ -23,10 +23,13 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
-            </div>
+                    <li>@Html.ActionLink("Cities", "Index", "Cities")</li>
+                    <li>@Html.ActionLink("Teams", "Index", "Teams")</li>
+                    <li>@Html.ActionLink("Groups", "Index", "Groups")</li>
+                    <li>@Html.ActionLink("Venues", "Index", "Venues")</li>
+                    
+                    @Html.Partial("_LoginPartial")
+</div>
         </div>
     </div>
     <div class="container body-content">

@@ -20,6 +20,11 @@ namespace FIFAWorldCup2018.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public virtual DbSet<City> Cities { get; set; }
+        public virtual DbSet<Group> Groups { get; set; }
+        public virtual DbSet<Team> Teams { get; set; }
+        public virtual DbSet<Venue> Venues  { get; set; }
+
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
